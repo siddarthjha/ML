@@ -1,11 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Dec 13 21:12:54 2015
 
-@author: ldierker
-"""
-
-# -*- coding: utf-8 -*-
 
 from pandas import Series, DataFrame
 import pandas as pd
