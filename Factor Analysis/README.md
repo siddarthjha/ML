@@ -9,7 +9,7 @@
 
 2. Sample size should be greater than the size of the factor.
 
-3. There should nopt be multi-collinearity.
+3. There should not be any multi-collinearity.
 
 4. No homoscedasicity(All variables having same variance) between variables.
 
