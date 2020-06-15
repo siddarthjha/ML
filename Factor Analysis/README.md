@@ -14,3 +14,9 @@
 4. No homoscedasicity(All variables having same variance) between variables.
 
 5. True co-relation between variables amd factors.
+
+#### Links for reading:
+
+[Chi-square-index](https://www.mathsisfun.com/data/chi-square-test.html)
+
+[Factor Analysis](http://users.stat.umn.edu/~helwig/notes/factanal-Notes.pdf)
