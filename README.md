@@ -1,5 +1,8 @@
 # Machine Learning
-Some algorithms implemented in Python:
+
+A computer program is said to learn from experience (E) with respect to some task (T) and some performance measure (P), if it's performance measure on (T), as measured by (P) improves with experience (E).
+
+**Algorithms implemented in Python:**
 
 * [Decision Tree](https://github.com/siddarthjha/ML/blob/master/Decision%20tree/decision_tree.py)
 * [Linear Regression](https://github.com/siddarthjha/ML/blob/master/Regression/Linearregression.py)
