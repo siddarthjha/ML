@@ -8,3 +8,9 @@ def sigmoid(Z):
     A = 1 / (1 + np.exp(-Z))
     return A, Z
 
+# Hyperbolic function
+
+def tanh(Z):
+    A = np.tanh(Z)
+    return A, Z
+
