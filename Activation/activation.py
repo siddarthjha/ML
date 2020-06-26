@@ -14,3 +14,9 @@ def tanh(Z):
     A = np.tanh(Z)
     return A, Z
 
+# Rectified Linear unit
+
+def relu(Z):
+    A = np.maximum(0, Z)
+    return A, Z
+
