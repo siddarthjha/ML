@@ -40,5 +40,8 @@ The ReLu function is as shown above. It gives an output x if x is positive and 0
 
 
 **4. Leaky Rectified Linear Unit**
-![lrelu]()
+
+![lrelu](https://github.com/siddarthjha/ML/blob/master/Images/leay.jpeg)
+
+It is an attempt to solve the dying ReLU problem
 
