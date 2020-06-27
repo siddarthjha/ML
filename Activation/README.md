@@ -28,6 +28,7 @@ Tanh is also a very popular and widely used activation function.
 
 
 <br>
+
 **3. Rectified linear Unit(RelU)**
 
 ![relu](https://github.com/siddarthjha/ML/blob/master/Images/relu'.jpg)
@@ -42,6 +43,7 @@ The ReLu function is as shown above. It gives an output x if x is positive and 0
 
 
 <br>
+
 **4. Leaky Rectified Linear Unit**
 
 **Relu vs Leaky Relu**
