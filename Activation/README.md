@@ -3,7 +3,7 @@
 Activation function of a node defines the output of that node given an input or set of inputs.
 
 
-
+<br>
 **1. Sigmoid Function**
 
 ![sig](https://github.com/siddarthjha/ML/blob/master/Images/sig.png)
@@ -13,7 +13,7 @@ Activation function of a node defines the output of that node given an input or 
 Sigmoid functions are one of the most widely used activation functions today
 
 
-
+<br>
 **2. Tanh Function**
 
 ![tanh](https://github.com/siddarthjha/ML/blob/master/Images/tanh.png)
@@ -25,7 +25,7 @@ This looks very similar to sigmoid. In fact, it is a scaled sigmoid function!
 Tanh is also a very popular and widely used activation function.
 
 
-
+<br>
 **3. Rectified linear Unit(RelU)**
 
 ![relu](https://github.com/siddarthjha/ML/blob/master/Images/relu'.jpg)
@@ -39,7 +39,10 @@ A(x) = max(0,x)
 The ReLu function is as shown above. It gives an output x if x is positive and 0 otherwise.
 
 
+<br>
 **4. Leaky Rectified Linear Unit**
+
+**Relu vs Leaky Relu**
 
 ![lrelu](https://github.com/siddarthjha/ML/blob/master/Images/leay.jpeg)
 
