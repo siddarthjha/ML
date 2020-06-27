@@ -4,6 +4,7 @@ Activation function of a node defines the output of that node given an input or 
 
 
 <br>
+
 **1. Sigmoid Function**
 
 ![sig](https://github.com/siddarthjha/ML/blob/master/Images/sig.png)
@@ -14,6 +15,7 @@ Sigmoid functions are one of the most widely used activation functions today
 
 
 <br>
+
 **2. Tanh Function**
 
 ![tanh](https://github.com/siddarthjha/ML/blob/master/Images/tanh.png)
