@@ -32,4 +32,26 @@ data['Height'].replace(np.nan, height_mean, inplace = True)
 data['Weight'].replace(np.nan, weight_mean, inplace = True)
 # This replaces all the null values with their mean values
 
+total = data.shape[0]                                    # Calculates total number of rows
+athlete = len(data.ID.unique())                          # Calculate number of participants 
+medal_win = len(data[data.Medal.fillna('None')!='None'].Name.unique()) # Calulates the participants won medals
+print('Total number of athletes are ', athlete)
+print("The number of athletes won the medals", medal_win)
+
+print(data[data.Medal.fillna('None') != 'None'].Medal.value_counts()) # Calulates the total medals ditribution
+print('The total number of medals ', data[data.Medal.fillna('None') != 'None'].shape[0]) # Total medals
+print('The cities are \n', data[data.City.fillna('None') !='None'].City.value_counts()) # Retreives all the cities 
+print('The number of male and female athletes\n', data[data.Sex.fillna('None') != 'None'].Sex.value_counts())
+# Calculates the male and female athletes
+print(data.groupby(['Team','Medal']).Medal.agg('count')) # Calulates the medals won by each team
+print(data.groupby(['Sex','Medal']).Sex.agg('count'))    # Calulates the medals won by Sex
+print('The different types of sport for the athletes and their participation\n', data[data.Sport.fillna('None') != 'None'].Sport.value_counts())
+# Calculates all the sports and their participation 
+print('Total number of women participants', len(data[data.Sex=='F'].Name.unique())) # Women participation
+print('Total number of men participants', len(data[data.Sex=='M'].Name.unique()))   # Men participation
+f_year_count = data[data.Sex=='F'].groupby('Year').agg('count').Name
+m_year_count = data[data.Sex=='M'].groupby('Year').agg('count').Name
+plot = (sns.scatterplot(data = m_year_count), sns.scatterplot(data = f_year_count))
+plt.show() # Data visulation plot of male and female participants
+
 
