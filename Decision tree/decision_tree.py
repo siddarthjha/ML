@@ -35,3 +35,12 @@ print(pred_test.shape)
 print(tar_train.shape)
 print(tar_test.shape)
 
+#Build model on training data
+classifier=DecisionTreeClassifier()
+classifier=classifier.fit(pred_train,tar_train)
+print(classifier)
+predictions=classifier.predict(pred_test)
+print(predictions)
+
+print(sklearn.metrics.confusion_matrix(tar_test,predictions))
+print(sklearn.metrics.accuracy_score(tar_test, predictions))
