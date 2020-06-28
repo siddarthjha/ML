@@ -4,3 +4,5 @@
 
 [Olympic athlete history events](https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results/discussion)
 
+**Note:** The analysis is done on "athlete_events.csv"
+
