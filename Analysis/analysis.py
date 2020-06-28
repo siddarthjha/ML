@@ -54,4 +54,23 @@ m_year_count = data[data.Sex=='M'].groupby('Year').agg('count').Name
 plot = (sns.scatterplot(data = m_year_count), sns.scatterplot(data = f_year_count))
 plt.show() # Data visulation plot of male and female participants
 
-
+male_data = data[data.Sex =='M']
+print(male_data.groupby(['Sport'])['Weight', 'Height'].agg(['min', 'max', 'mean']))
+female_data = data[data.Sex =='F']
+print(female_data.groupby(['Sport'])['Weight', 'Height'].agg(['min', 'max', 'mean']))
+# It calculates the height and weight of male and female in the different sports
+sport_min_year = male_data.groupby('Sport').Year.agg(['min', 'max'])['min'].sort_values('index')
+year_count = Counter(sport_min_year)
+year = list(year_count.keys())
+new_sports = list(year_count.values())
+plot_data = {'x':year, 'y':new_sports}
+sns.scatterplot(data=plot_data, x = 'x', y='y')
+plt.show() # It shows the new sports introduced each year
+print(data.groupby(['Event']).Event.unique())
+print(data.groupby(['Season', 'Event']).Event.value_counts()) # It shows the events take place in different season
+sns.boxplot(x = data['Year'], y = data['Medal'])
+# plt.show()
+print(data.corr()) # It gives the correaltion among the variables
+print(data.groupby(data['City']).Age.agg(['min'])['min'].sort_values(ascending = True))
+print(data.groupby(data['Name']).Age.agg(['min'])['min'].sort_values(ascending = True))
+# It groups the data by city, age and Name age 
