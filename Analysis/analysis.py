@@ -18,4 +18,18 @@ print(data.info())
 print(data.describe(include = 'all'))
 print(data.dtypes)
 
+for i in list(d):
+	print(i + ':' + str(Nan_percent(d, i)) + '%')      # Calling of Nan_percent function 
+
+age_mean = int(data['Age'].mean())                     # Calculation of Mean 
+height_mean = int(data['Height'].mean())
+weight_mean = int(data['Weight'].mean())
+print('The age mean which will be replaced with null values is', age_mean)
+print('The height mean which will be replaced with null values is', height_mean)
+print('The Weight mean which will be replaced with null values is', weight_mean)
+data['Age'].replace(np.nan, age_mean, inplace = True)    # Replacing of Null values
+data['Height'].replace(np.nan, height_mean, inplace = True)
+data['Weight'].replace(np.nan, weight_mean, inplace = True)
+# This replaces all the null values with their mean values
+
 
