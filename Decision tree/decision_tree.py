@@ -19,3 +19,19 @@ print('Hello')
 data_clean.dtypes
 data_clean.describe()
 
+#Split into training and testing sets
+
+predictors = data_clean[['BIO_SEX','HISPANIC','WHITE','BLACK','NAMERICAN','ASIAN',
+'age','ALCEVR1','ALCPROBS1','marever1','cocever1','inhever1','cigavail','DEP1',
+'ESTEEM1','VIOL1','PASSIST','DEVIANT1','SCHCONN1','GPA1','EXPEL1','FAMCONCT','PARACTV',
+'PARPRES']]
+
+targets = data_clean.TREG1
+
+pred_train, pred_test, tar_train, tar_test  =   train_test_split(predictors, targets, test_size=.4)
+
+print(pred_train.shape)
+print(pred_test.shape)
+print(tar_train.shape)
+print(tar_test.shape)
+
