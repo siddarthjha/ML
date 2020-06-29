@@ -44,3 +44,17 @@ And these are all the pre-processing you can do before going to analysis.
 * Distribution Analysis.
 * Categorical variable Analysis.
 * Statistical Analysis.
+  * Discovers what happened by using past data.
+* Text Analysis.
+  * Data mining.
+* Descriptive Analysis.
+  * Summarrized numerical data.
+* Predictive Analysis.
+  * What is likely to happen.
+* Prescriptive Analysis.
+  * Suggest a possible action to the problem.
+* Diagnostic Analysis.
+  * Why did it happen.
+
+**Data Analysis consist of the following phases:**
+
