@@ -36,3 +36,9 @@ Before jumping to **Data Analysis** we must undergo **Data Pre-processing**.
   * Dimensionality reduction.
 
 And these are all the pre-processing you can do before going to analysis.
+
+### Different types of Analysis:
+* Exploratory Analysis.
+* Distribution Analysis.
+* Categorical variable Analysis.
+* Statistical Analysis.
