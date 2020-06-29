@@ -13,28 +13,27 @@ df = pd.read_csv('Sample.csv')
 print(df.head())
 
 # Understand Data
-
 print(df.describe(include = "all"))
 print(df.dtypes)
 # Data types of all the column
 # Data formatting
 
+
 for i in range(1000):
     df['B'][i]=(df['B'][i].replace(' ', '').replace('-', '').replace(':', ''))
    
 print(df.head(3))
+df['B'] = df['B'].astype(float)
 
-df['B']=df['B'].astype(float)
 scaler = MinMaxScaler()
 data_scaled = scaler.fit_transform(df)
 print(pd.DataFrame(data_scaled).describe())
 
+
 lst=['A','B','C','D','E','F']
 data.columns=lst
 print(data)
-
-data.sort_values(['B', 'C'], axis=0, 
-                 ascending=True, inplace=True) 
+data.sort_values(['B', 'C'], axis=0, ascending=True, inplace=True) 
 print(data.tail(50))
 
 # Data visualization
@@ -61,11 +60,10 @@ plt.show()
 km = KMeans(n_clusters=8)
 y_predicted = km.fit_predict(data[['B','C']])
 print(y_predicted)
-
 data['cluster']=y_predicted
 print(data.head())
-
 print(km.cluster_centers_)
+
 
 df1 = data[data.cluster==0]
 df2 = data[data.cluster==1]
@@ -100,16 +98,15 @@ print(number_of_outliers)
 threshold = distance.nlargest(number_of_outliers).min()
 print(threshold)
 
-# anomaly1 contain the anomaly result of the above method Cluster (0:normal, 1:anomaly) 
 
+# anomaly1 contain the anomaly result of the above method Cluster (0:normal, 1:anomaly) 
 data['anomaly'] = (distance >= threshold).astype(int)
 print(df['anomaly'].head(20))
-
 fig, ax = plt.subplots(figsize=(10,10))
 colors = {0:'blue', 1:'red'}
 ax.scatter(data['B'], data['C'], c=data["anomaly"].apply(lambda x: colors[x]))
-plt.xlabel('time stamp')
-plt.ylabel('system output')
+plt.xlabel('Time Stamp')
+plt.ylabel('System Output')
 plt.show();
 
 
