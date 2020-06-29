@@ -39,10 +39,23 @@ And these are all the pre-processing you can do before going to analysis.
 
 **Data analysis** is defined as a process of cleaning, transforming, and modeling data to discover useful information for business decision-making. The purpose of Data Analysis is to extract useful information from data and taking the decision based upon the data analysis.
 
+
+**Data Analysis consist of the following phases:**
+* Data Requirement Gathering
+* Data Collection
+* Data Cleaning
+* Data Analysis
+* Data Interpretation
+* Data Visualization
+
+
 ### Different types of Analysis:
 * Exploratory Analysis.
+  * Explore the data
 * Distribution Analysis.
+  * Distribution of various variables. 
 * Categorical variable Analysis.
+  * To understand the more details of variables.
 * Statistical Analysis.
   * Discovers what happened by using past data.
 * Text Analysis.
@@ -56,5 +69,4 @@ And these are all the pre-processing you can do before going to analysis.
 * Diagnostic Analysis.
   * Why did it happen.
 
-**Data Analysis consist of the following phases:**
 
