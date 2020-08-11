@@ -11,4 +11,11 @@ A computer program is said to learn from experience (E) with respect to some tas
 * [Factor Analysis](https://github.com/siddarthjha/ML/tree/master/Factor%20Analysis)
 
 
+## How to Contribute
 
+This is an open project and contribution in all forms are welcomed.
+Please follow these [Contribution Guidelines](CONTRIBUTING.md)
+
+## Code of Conduct
+
+Adhere to the GitHub specified community [code](CODE_OF_CONDUCT.md).
